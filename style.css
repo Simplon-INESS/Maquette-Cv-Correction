@@ -1,0 +1,177 @@
+/* ======================================= CSS GENERAL =================================== */
+
+/* ======= Import de Polices de caractère ======= */
+@import url('https://fonts.googleapis.com/css?family=Lato:100i,300,400');
+
+/* ============== Reset css =========== */
+body, html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+label{
+    display: block;
+}
+input[type='range']{
+    margin-left: 0;
+}
+
+/* ==== Main ==== */
+main{
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+/* ================== Flexbox =========== */
+.dflex{
+    display: flex;
+}
+.dflex-col{
+    flex-direction: column;
+}
+
+/* ================== Couleurs ========== */
+.bgc1{
+    background-color: #5AA3D7;
+}
+.bgc2{
+    background-color: #E8E6E5;
+}
+.bgc3{
+    background-color: #767170;
+}
+.bgc4{
+    background-color: #ffffff;
+}
+.c1{
+    color: #5AA3D7;
+}
+.c2{
+    color: #767170;
+}
+.box-shad{
+    box-shadow: 0 2px 8px #bbbbbb;
+}
+
+/* ======================================= ASIDE PRINCIPAL ======================================= */
+.aside-principal{
+    padding-bottom: 20px;
+    width: 30%;
+    color: #ffffff;
+}
+.header-principal{
+    position: relative;
+}
+.titre{
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    text-shadow: 0 1px 6px #555555;
+}
+.titre h2{
+    margin-bottom: inherit;
+    font-size: 2.5vw;
+}
+.titre p{
+    margin-top: inherit;
+    font-size: 2vw;
+}
+.header-principal img{
+    max-width: 100%;
+}
+
+/* ======================================= Articles Aside Principal ======================================= */
+.art-icon{
+    padding-top: 20px;
+    width: 20%;
+    text-align: center;
+}
+.aside-section{
+    flex-wrap:wrap;
+}
+.aside-principal .art-content{
+    padding: 0 10px 20px 0;
+    width: 80%;
+}
+.aside-section .art-content{
+    border-bottom: 1px solid #4A8DC6;
+}
+.aside-section article:nth-of-type(5)>.art-content{
+    border-bottom: none;
+}
+
+.aside-principal .art-content p:not(:nth-child(1)) {
+    margin-top: 0;
+}
+.aside-principal .art-content h5{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+/* =========================== Input Range Style ======================== */
+input[type='range'], input[type=range]::-webkit-slider-thumb {
+    outline: none; /* Enlève le style du range sur Chrome */
+    background: transparent; /* Blanc par défault dans Chrome */
+    -webkit-appearance: none;
+}
+
+/* ==== Mozilla Firefox ==== */
+input[type='range']::-moz-range-track {
+    background-color: #4483BF;
+}
+input[type='range']::-moz-range-progress,
+input[type='range']::-moz-range-thumb{
+    border: none;
+    background-color: #ffffff;
+}
+
+/* ==== Google Chrome / Opera ==== */
+input[type='range']::-webkit-slider-thumb {
+    position: relative;
+    z-index: 2;
+    margin-top: -6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+input[type='range']::-webkit-slider-runnable-track {
+    height: 3px;
+    background: #ffffff;
+}
+
+/* ==== Internet Explorer / Edge ==== */
+/* POUR LE RESTE À VOUS DE CHERCHER !!! ;) */
+
+/* ======================================= SECTION PRINCIPALE ======================================= */
+.section-principale{
+    padding-left: 20px;
+    width: 70%;
+    flex-wrap:wrap;
+}
+.section-principale .box{
+    padding: 30px 0;
+}
+.section-principale .box:not(:nth-child(1)){
+    margin-top: 20px;
+}
+.section-principale article hr {
+    color: #eeeeee;
+}
+.section-principale .art-content i{
+    margin-right: 10%;
+    color:#5AA3D7;
+}
+.section-principale .art-content {
+    width: 100%;
+}
+.section-principale .art-content p{
+    width: 90%;
+}
+.section-principale .art-content h4, .sect-principale .art-content h5, .sect-principale .art-content p{
+    margin: 10px 0;
+}
+
+
